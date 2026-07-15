@@ -23,18 +23,18 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://xcubate-innovation-90.alainbriez.chatgpt.site"),
   title: "Xcubate — Enterprise innovation at maximum velocity",
   description:
-    "Xcubate helps large enterprises preserve their capacity to innovate fast by excubating high-potential projects and turning them into validated businesses in 90 days.",
+    "Xcubate gives enterprise teams the speed and focus to turn high-potential innovation projects into validated businesses in 90 days.",
   openGraph: {
     title: "Xcubate — Enterprise innovation at maximum velocity",
     description:
-      "Excubate high-potential projects. Validate the business in 90 days.",
+      "Accelerate high-potential projects with your teams. Validate the business in 90 days.",
     images: [{ url: "/og.png", width: 1731, height: 909, alt: "Xcubate — Enterprise innovation at maximum velocity" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Xcubate — Enterprise innovation at maximum velocity",
     description:
-      "Excubate high-potential projects. Validate the business in 90 days.",
+      "Accelerate high-potential projects with your teams. Validate the business in 90 days.",
     images: ["/og.png"],
   },
 };

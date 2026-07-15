@@ -1,14 +1,16 @@
-const clientPlaceholders = [
-  "GROUP 01",
-  "INDUSTRY 02",
-  "LAB 03",
-  "CORP. 04",
-  "VENTURE 05",
-  "GROUP 06",
-  "INDUSTRY 07",
-  "LAB 08",
-  "CORP. 09",
-  "VENTURE 10",
+import Image from "next/image";
+
+const clients = [
+  { name: "L’Oréal", logo: "/logos/loreal.svg" },
+  { name: "Mars, Incorporated", logo: "/logos/mars.svg" },
+  { name: "Royal Canin", logo: "/logos/royal-canin.svg" },
+  { name: "Unilever", logo: "/logos/unilever.svg" },
+  { name: "Decathlon", logo: "/logos/decathlon.svg" },
+  { name: "EDF", logo: "/logos/edf.svg", className: "client-logo-tall" },
+  { name: "Triller", logo: "/logos/triller.svg" },
+  { name: "HEC Paris", logo: "/logos/hec-paris.svg", className: "client-logo-tall" },
+  { name: "Leroy Merlin", logo: "/logos/leroy-merlin.svg", className: "client-logo-tall" },
+  { name: "Crédit Mutuel", logo: "/logos/credit-mutuel.svg" },
 ];
 
 const experiments = [
@@ -42,9 +44,9 @@ export default function Home() {
           <span>Protocol 90.J</span>
         </div>
         <h1>
-          Innovation cannot
+          Make innovation
           <br />
-          move at <em>corporate speed.</em>
+          move at <em>market speed.</em>
         </h1>
         <div className="hero-bottom">
           <div className="hero-stamp" aria-hidden="true">
@@ -53,13 +55,13 @@ export default function Home() {
           </div>
           <div className="hero-copy">
             <p>
-              Xcubate helps large enterprises preserve their capacity to
-              innovate fast. We excubate high-potential projects from corporate
-              drag and turn them into validated businesses in 90 days.
+              Xcubate gives ambitious enterprise teams the speed and focus to
+              turn R&amp;D and innovation projects into validated businesses in 90
+              days — while keeping internal ownership and strategic alignment.
             </p>
             <div className="hero-actions">
               <a className="button button-dark" href="#contact">
-                Challenge our project <span aria-hidden="true">→</span>
+                Pressure-test your project <span aria-hidden="true">→</span>
               </a>
               <a className="text-link" href="#method">
                 See the protocol ↓
@@ -68,10 +70,10 @@ export default function Home() {
           </div>
         </div>
         <div className="hero-ticker" aria-label="Xcubate principles">
-          <span>NO THEATRE</span>
-          <span>HYPOTHESES &gt; OPINIONS</span>
-          <span>EVIDENCE &gt; SLIDES</span>
-          <span>90 DAYS. NOT 18 MONTHS.</span>
+          <span>FULL FOCUS</span>
+          <span>HYPOTHESES, TESTED</span>
+          <span>EVIDENCE BUILDS ALIGNMENT</span>
+          <span>90 DAYS TO A CLEAR DECISION</span>
         </div>
       </section>
 
@@ -80,13 +82,17 @@ export default function Home() {
           <p className="eyebrow" id="clients-title">
             Already deployed across 50+ enterprise innovation projects
           </p>
-          <p className="placeholder-note">Client logos to be added</p>
         </div>
         <div className="logos-grid">
-          {clientPlaceholders.map((client) => (
-            <div className="logo-cell" key={client}>
-              <span aria-hidden="true">◆</span>
-              {client}
+          {clients.map((client) => (
+            <div className="logo-cell" key={client.name}>
+              <Image
+                className={`client-logo ${client.className ?? ""}`}
+                src={client.logo}
+                alt={client.name}
+                width={200}
+                height={80}
+              />
             </div>
           ))}
         </div>
@@ -96,25 +102,27 @@ export default function Home() {
         <div className="section-index">01 / REALITY</div>
         <div className="manifesto-content">
           <p className="lead-serif">
-            The world is accelerating. Most corporate innovation systems are not.
+            The world is accelerating. Your capacity to innovate can accelerate
+            with it.
           </p>
           <p className="excubation-note">
             <strong>Excubation keeps enterprise innovation fast.</strong> We move
-            the project into a high-autonomy, high-frequency execution system,
-            then bring back a validated business your organisation can scale.
+            the project into a focused, high-frequency execution system alongside
+            your team, then bring back a validated business your organisation can
+            scale.
           </p>
           <div className="manifesto-grid">
             <div>
-              <span className="strike">A reassuring business plan.</span>
-              <span className="replacement">Market evidence.</span>
+              <span className="strike">Strategy alone.</span>
+              <span className="replacement">Strategy tested in market.</span>
             </div>
             <div>
-              <span className="strike">Another innovation workshop.</span>
-              <span className="replacement">Customers on the phone.</span>
+              <span className="strike">An informed hypothesis.</span>
+              <span className="replacement">Customer evidence.</span>
             </div>
             <div>
-              <span className="strike">A prototype in a drawer.</span>
-              <span className="replacement">An offer people will buy.</span>
+              <span className="strike">Technical proof alone.</span>
+              <span className="replacement">Commercial proof.</span>
             </div>
           </div>
         </div>
@@ -125,7 +133,7 @@ export default function Home() {
           <div className="section-index">02 / PROTOCOL</div>
           <div>
             <p className="eyebrow">The X90 high-velocity excubation system</p>
-            <h2>Maximum velocity. Without corporate antibodies.</h2>
+            <h2>Maximum velocity. Full enterprise alignment.</h2>
           </div>
         </div>
 
@@ -144,8 +152,8 @@ export default function Home() {
             <h3>Decode the project.</h3>
             <p>
               Understand the technology, assets, internal constraints and real
-              ambition. Isolate what can create value — and what is merely
-              sophistication.
+              ambition. Distinguish what can create value now from what can
+              compound over the longer horizon.
             </p>
             <ul>
               <li>Project audit &amp; interviews</li>
@@ -181,8 +189,8 @@ export default function Home() {
             <h3>Create market collision.</h3>
             <p>
               Run rapid experiments across targets, angles, offers and channels.
-              Measure signals. Kill weak paths fast. Double down on the ones that
-              move.
+              Measure signals. Close weak paths early. Concentrate resources where
+              the evidence is strongest.
             </p>
             <div className="experiment-stack">
               {experiments.map(([label, value, status]) => (
@@ -227,7 +235,7 @@ export default function Home() {
         <div className="section-shell outcome-grid">
           <div>
             <div className="section-index inverse">03 / OUTPUT</div>
-            <h2>Not a recommendation.<br />A business ready to re-enter the enterprise.</h2>
+            <h2>Beyond a recommendation.<br />A business ready to scale inside the enterprise.</h2>
           </div>
           <div className="outcome-list">
             <div>
@@ -292,8 +300,8 @@ export default function Home() {
           <p className="eyebrow">Your future sparring partner</p>
           <h2>Founder name.</h2>
           <p className="founder-intro">
-            Not a facilitator. An operator embedded with your team to turn a
-            technical idea into a testable commercial machine.
+            A senior operator embedded alongside your team to turn a technical
+            idea into a testable commercial business.
           </p>
           <p>
             Add your background here: the companies built or supported, your
@@ -306,22 +314,22 @@ export default function Home() {
       <section className="fit section-shell">
         <div className="section-index">05 / FILTER</div>
         <div className="fit-content">
-          <h2>This protocol is not for everyone.</h2>
+          <h2>Built for teams ready to move.</h2>
           <div className="fit-columns">
             <div className="fit-card yes">
               <h3>We should talk if —</h3>
               <ul>
-                <li>Your technical project is still searching for its business model.</li>
-                <li>You can mobilise a team for 90 days.</li>
-                <li>You are ready to let the market challenge internal beliefs.</li>
+                <li>Your technical project is ready for commercial hypotheses.</li>
+                <li>You can form a joint team for 90 days.</li>
+                <li>You want market evidence before the next major investment.</li>
               </ul>
             </div>
             <div className="fit-card no">
-              <h3>Walk away if —</h3>
+              <h3>Another approach may fit better if —</h3>
               <ul>
-                <li>You only want a market study.</li>
-                <li>Every test must go through six committees.</li>
-                <li>The project has to succeed, whatever the evidence says.</li>
+                <li>You need strategic research without market activation.</li>
+                <li>The project cannot enter live testing yet.</li>
+                <li>The investment decision has already been made.</li>
               </ul>
             </div>
           </div>
