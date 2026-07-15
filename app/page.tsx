@@ -30,7 +30,7 @@ export default function Home() {
         <nav aria-label="Main navigation">
           <a href="#method">Method</a>
           <a href="#outcome">Outcome</a>
-          <a href="#founder">Founder</a>
+          <a href="#founder">Team</a>
         </nav>
         <a className="header-cta" href="#contact">
           Submit a project <span aria-hidden="true">↗</span>
@@ -332,8 +332,54 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="founder founder--flip" id="partner">
+        <div className="founder-visual">
+          <img
+            className="founder-portrait partner-portrait"
+            src="/sofiame-lekfif.jpeg"
+            alt="Sofiame Lekfif, partner at Excubate"
+          />
+          <div className="founder-tag">PARTNER / OPERATOR</div>
+        </div>
+        <div className="founder-copy">
+          <div className="section-index">05 / PARTNER</div>
+          <p className="eyebrow">Enterprise sales operator / 7-figure agency exit</p>
+          <h2>Sofiame Lekfif.</h2>
+          <p className="founder-intro">
+            Revenue is the only validation that counts. I build the machine
+            that produces it.
+          </p>
+          <p>
+            My background runs through Natixis Corporate & Investment Banking,
+            Lagardère and Oracle, where I closed 3.9M in enterprise B2B sales.
+            I know how large organisations buy, decide and stall.
+          </p>
+          <p>
+            Since then I have launched 37 new ventures across 14 countries for
+            Fortune 500 innovation teams, grown my own e-commerce brand to 4.7M
+            in B2C sales, generated 29M for a single client, and exited Reddot
+            Growth, a 7-figure agency.
+          </p>
+          <div className="founder-ventures" aria-label="Track record of Sofiame Lekfif">
+            <div>
+              <span>ENTERPRISE</span>
+              <p>Natixis CIB · Lagardère · Oracle — 3.9M B2B sales</p>
+            </div>
+            <div>
+              <span>ECOMMERCE</span>
+              <p>4.7M own brand · 29M generated for one client</p>
+            </div>
+            <div>
+              <span>EXITED</span>
+              <p>Reddot Growth — 7-figure agency</p>
+            </div>
+          </div>
+          <a className="text-link" href="#contact">Work directly with Sofiame ↗</a>
+        </div>
+      </section>
+
       <section className="fit section-shell">
-        <div className="section-index">05 / FILTER</div>
+        <div className="section-index">06 / FILTER</div>
         <div className="fit-content">
           <h2>Built for teams ready to move.</h2>
           <div className="fit-columns">
@@ -359,7 +405,7 @@ export default function Home() {
 
       <section className="contact" id="contact">
         <div className="contact-grid section-shell">
-          <div className="section-index inverse">06 / CONTACT</div>
+          <div className="section-index inverse">07 / CONTACT</div>
           <div className="contact-content">
             <div className="contact-copy">
               <p className="eyebrow">We take on a limited number of projects</p>

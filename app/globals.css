@@ -851,6 +851,25 @@ a {
   font-weight: 700;
 }
 
+.founder--flip .founder-copy {
+  order: 1;
+}
+
+.founder--flip .founder-visual {
+  order: 2;
+  border-right: 0;
+  border-left: 1px solid var(--ink);
+}
+
+.founder--flip .founder-tag {
+  right: auto;
+  left: 30px;
+}
+
+.partner-portrait {
+  object-position: 50% 18%;
+}
+
 .fit {
   display: grid;
   grid-template-columns: minmax(100px, 1fr) 4fr;
@@ -1191,6 +1210,11 @@ a {
     min-height: 660px;
     border-right: 0;
     border-bottom: 1px solid var(--ink);
+  }
+
+  .founder--flip .founder-visual {
+    order: 0;
+    border-left: 0;
   }
 
   .fit-card:first-child {
