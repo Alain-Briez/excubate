@@ -289,12 +289,10 @@ export default function Home() {
 
       <section className="founder" id="founder">
         <div className="founder-visual">
-          <Image
+          <img
             className="founder-portrait"
             src="/alain-briez.png"
             alt="Alain Briez, founder of Xcubate"
-            fill
-            sizes="(max-width: 980px) 100vw, 50vw"
           />
           <div className="founder-tag">FOUNDER / OPERATOR</div>
         </div>
