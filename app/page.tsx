@@ -337,7 +337,7 @@ export default function Home() {
           <img
             className="founder-portrait partner-portrait"
             src="/sofiame-lekfif.jpeg"
-            alt="Sofiame Lekfif, partner at Excubate"
+            alt="Sofiane Lekfif, partner at Excubate"
           />
           <div className="founder-tag">PARTNER / OPERATOR</div>
         </div>
