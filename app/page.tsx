@@ -288,26 +288,49 @@ export default function Home() {
       </section>
 
       <section className="founder" id="founder">
-        <div className="founder-visual" aria-label="Founder portrait placeholder">
-          <div className="portrait-placeholder">
-            <span>PORTRAIT</span>
-            <span>TO BE ADDED</span>
-          </div>
+        <div className="founder-visual">
+          <Image
+            className="founder-portrait"
+            src="/alain-briez.png"
+            alt="Alain Briez, founder of Xcubate"
+            fill
+            sizes="(max-width: 980px) 100vw, 50vw"
+          />
           <div className="founder-tag">FOUNDER / OPERATOR</div>
         </div>
         <div className="founder-copy">
           <div className="section-index">04 / FOUNDER</div>
-          <p className="eyebrow">Your future sparring partner</p>
-          <h2>Founder name.</h2>
+          <p className="eyebrow">Serial tech entrepreneur / 7-figure agency exit</p>
+          <h2>Alain Briez.</h2>
           <p className="founder-intro">
-            A senior operator embedded alongside your team to turn a technical
-            idea into a testable commercial business.
+            I do not advise entrepreneurs from the sidelines. I build companies.
           </p>
           <p>
-            Add your background here: the companies built or supported, your
-            sector expertise, and the convictions that led you to create Xcubate.
+            I work directly with enterprise teams to turn innovation projects
+            into businesses that can survive the market. No junior hand-off. No
+            distance between the strategy and the person doing the work.
           </p>
-          <a className="text-link" href="#contact">View full profile ↗</a>
+          <p>
+            My track record spans medical AI, senior companionship, sales tech,
+            consumer products, secure cloud infrastructure and international
+            go-to-market. Four ventures are still running. Two were exited. Two
+            failed. Every one sharpened how I build, test and decide.
+          </p>
+          <div className="founder-ventures" aria-label="Companies founded by Alain Briez">
+            <div>
+              <span>OPERATING</span>
+              <p>Verbasync · MyAmigo · MyMementa · Outstalk</p>
+            </div>
+            <div>
+              <span>EXITED</span>
+              <p>Reddot Growth · Blisseo</p>
+            </div>
+            <div>
+              <span>HARD LESSONS</span>
+              <p>Iteria Systems · KountryVeggyz</p>
+            </div>
+          </div>
+          <a className="text-link" href="#contact">Work directly with Alain ↗</a>
         </div>
       </section>
 
