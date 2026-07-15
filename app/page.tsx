@@ -360,16 +360,57 @@ export default function Home() {
       <section className="contact" id="contact">
         <div className="contact-grid section-shell">
           <div className="section-index inverse">06 / CONTACT</div>
-          <div>
-            <p className="eyebrow">We take on a limited number of projects</p>
-            <h2>You have the technology.<br /><em>Let&apos;s verify the business.</em></h2>
-            <p className="contact-note">
-              30 minutes. Your project, its constraints, and the first risk to
-              test. If we cannot accelerate it, we will tell you.
-            </p>
-            <a className="button button-light" href="mailto:contact@xcubate.io?subject=Innovation%20project%20—%20X90">
-              Submit a project <span aria-hidden="true">↗</span>
-            </a>
+          <div className="contact-content">
+            <div className="contact-copy">
+              <p className="eyebrow">We take on a limited number of projects</p>
+              <h2>You have the technology.<br /><em>Let&apos;s verify the business.</em></h2>
+              <p className="contact-note">
+                Tell us where the project stands. We&apos;ll identify the first risk
+                worth testing and whether X90 is the right format.
+              </p>
+            </div>
+
+            <form
+              className="contact-form"
+              action="mailto:contact@xcubate.io?subject=New%20Xcubate%20project"
+              method="post"
+              encType="text/plain"
+            >
+              <div className="contact-form-grid">
+                <label className="form-field">
+                  <span>Name</span>
+                  <input type="text" name="Name" autoComplete="name" required />
+                </label>
+                <label className="form-field">
+                  <span>Email</span>
+                  <input type="email" name="Email" autoComplete="email" required />
+                </label>
+                <label className="form-field form-field-wide">
+                  <span>Company</span>
+                  <input type="text" name="Company" autoComplete="organization" required />
+                </label>
+                <label className="form-field form-field-wide">
+                  <span>Project timeline</span>
+                  <select name="Project timeline" defaultValue="" required>
+                    <option value="" disabled>Select a timeline</option>
+                    <option value="This month">This month</option>
+                    <option value="Within 3 months">Within 3 months</option>
+                    <option value="Within 6 months">Within 6 months</option>
+                    <option value="No project yet">No project yet</option>
+                  </select>
+                </label>
+                <label className="form-field form-field-wide">
+                  <span>Complementary information <i>Optional</i></span>
+                  <textarea name="Complementary information" rows={5} />
+                </label>
+              </div>
+              <div className="contact-form-footer">
+                <button className="contact-submit" type="submit">
+                  Submit your project <span aria-hidden="true">↗</span>
+                </button>
+                <small>Opens your email client to send.</small>
+              </div>
+            </form>
           </div>
         </div>
       </section>
