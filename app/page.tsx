@@ -24,8 +24,8 @@ export default function Home() {
   return (
     <main>
       <header className="site-header">
-        <a className="brand" href="#top" aria-label="Xcubate, back to top">
-          XCUBATE<span className="brand-dot">●</span>
+        <a className="brand" href="#top" aria-label="Excubate, back to top">
+          EXCUBATE<span className="brand-dot">●</span>
         </a>
         <nav aria-label="Main navigation">
           <a href="#method">Method</a>
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
           <div className="hero-copy">
             <p>
-              Xcubate gives ambitious enterprise teams the speed and focus to
+              Excubate gives ambitious enterprise teams the speed and focus to
               turn R&amp;D and innovation projects into validated businesses in 90
               days — while keeping internal ownership and strategic alignment.
             </p>
@@ -69,7 +69,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="hero-ticker" aria-label="Xcubate principles">
+        <div className="hero-ticker" aria-label="Excubate principles">
           <span>FULL FOCUS</span>
           <span>HYPOTHESES, TESTED</span>
           <span>EVIDENCE BUILDS ALIGNMENT</span>
@@ -292,7 +292,7 @@ export default function Home() {
           <img
             className="founder-portrait"
             src="/alain-briez.png"
-            alt="Alain Briez, founder of Xcubate"
+            alt="Alain Briez, founder of Excubate"
           />
           <div className="founder-tag">FOUNDER / OPERATOR</div>
         </div>
@@ -372,7 +372,7 @@ export default function Home() {
 
             <form
               className="contact-form"
-              action="mailto:contact@xcubate.io?subject=New%20Xcubate%20project"
+              action="mailto:contact@Excubate.io?subject=New%20Excubate%20project"
               method="post"
               encType="text/plain"
             >
@@ -416,11 +416,11 @@ export default function Home() {
       </section>
 
       <footer className="site-footer">
-        <a className="brand brand-light" href="#top">XCUBATE<span className="brand-dot">●</span></a>
+        <a className="brand brand-light" href="#top">Excubate<span className="brand-dot">●</span></a>
         <p>Innovation → Business / 90 days</p>
         <div>
-          <a href="mailto:contact@xcubate.io">contact@xcubate.io</a>
-          <span>© 2026 Xcubate</span>
+          <a href="mailto:contact@Excubate.io">contact@Excubate.io</a>
+          <span>© 2026 Excubate</span>
         </div>
       </footer>
     </main>
