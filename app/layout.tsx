@@ -20,9 +20,23 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Xcubate — De l'innovation au business en 90 jours",
+  metadataBase: new URL("https://xcubate-innovation-90.alainbriez.chatgpt.site"),
+  title: "Xcubate — Enterprise innovation at maximum velocity",
   description:
-    "Xcubate transforme les projets R&D et innovation en business viables grâce à un protocole d'expérimentation à haute fréquence.",
+    "Xcubate helps large enterprises preserve their capacity to innovate fast by excubating high-potential projects and turning them into validated businesses in 90 days.",
+  openGraph: {
+    title: "Xcubate — Enterprise innovation at maximum velocity",
+    description:
+      "Excubate high-potential projects. Validate the business in 90 days.",
+    images: [{ url: "/og.png", width: 1731, height: 909, alt: "Xcubate — Enterprise innovation at maximum velocity" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Xcubate — Enterprise innovation at maximum velocity",
+    description:
+      "Excubate high-potential projects. Validate the business in 90 days.",
+    images: ["/og.png"],
+  },
 };
 
 export default function RootLayout({
@@ -31,7 +45,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <body className={`${inter.variable} ${cormorant.variable} ${robotoMono.variable}`}>
         {children}
       </body>
