@@ -1,4 +1,5 @@
 import Image from "next/image";
+import { ContactForm } from "./components/contact-form";
 
 const clients = [
   { name: "L’Oréal", logo: "/logos/loreal.svg" },
@@ -416,47 +417,7 @@ export default function Home() {
               </p>
             </div>
 
-            <form
-              className="contact-form"
-              action="mailto:contact@Excubate.io?subject=New%20Excubate%20project"
-              method="post"
-              encType="text/plain"
-            >
-              <div className="contact-form-grid">
-                <label className="form-field">
-                  <span>Name</span>
-                  <input type="text" name="Name" autoComplete="name" required />
-                </label>
-                <label className="form-field">
-                  <span>Email</span>
-                  <input type="email" name="Email" autoComplete="email" required />
-                </label>
-                <label className="form-field form-field-wide">
-                  <span>Company</span>
-                  <input type="text" name="Company" autoComplete="organization" required />
-                </label>
-                <label className="form-field form-field-wide">
-                  <span>Project timeline</span>
-                  <select name="Project timeline" defaultValue="" required>
-                    <option value="" disabled>Select a timeline</option>
-                    <option value="This month">This month</option>
-                    <option value="Within 3 months">Within 3 months</option>
-                    <option value="Within 6 months">Within 6 months</option>
-                    <option value="No project yet">No project yet</option>
-                  </select>
-                </label>
-                <label className="form-field form-field-wide">
-                  <span>Complementary information <i>Optional</i></span>
-                  <textarea name="Complementary information" rows={5} />
-                </label>
-              </div>
-              <div className="contact-form-footer">
-                <button className="contact-submit" type="submit">
-                  Submit your project <span aria-hidden="true">↗</span>
-                </button>
-                <small>Opens your email client to send.</small>
-              </div>
-            </form>
+            <ContactForm />
           </div>
         </div>
       </section>
